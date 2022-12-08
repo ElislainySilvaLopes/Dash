@@ -1,0 +1,21 @@
+image: node:16
+
+cache:
+  paths:
+    - node_modules/
+
+pages:
+  script:
+    - apt-get update
+    - apt-get install libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb -y
+    - npm ci
+    - npx cypress run -s cypress/integration/class/class_creation.feature || true
+    - npx cypress run -s cypress/integration/user/student/student_creation.feature || true
+    - npx cypress run -s cypress/integration/user/educationalAdm/educationalAdm_creation.feature || true
+    - node report/generate.js
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
+  allow_failure: true
