@@ -1,0 +1,12 @@
+{
+  "baseUrl": "https://dev-site.qa-assessment.cubos.dev/",
+  "defaultCommandTimeout": 30000,
+  "video": false,
+  "viewportWidth": 1440,
+  "viewportHeight": 900,
+  "testFiles": "**/*.feature",
+  "env": {
+    "baseUrlAPI": "https://dev-api.qa-assessment.cubos.dev/users",
+    "TAGS": "not @ignore"
+  }
+}

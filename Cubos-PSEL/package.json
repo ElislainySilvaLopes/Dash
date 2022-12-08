@@ -1,0 +1,36 @@
+{
+  "name": "cubos-psel",
+  "version": "1.0.0",
+  "devDependencies": {
+    "cypress": "^8.3.0",
+    "cypress-cucumber-attach-screenshots-to-failed-steps": "^1.0.0",
+    "cypress-cucumber-preprocessor": "^2.5.5",
+    "multiple-cucumber-html-reporter": "^1.18.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "nonGlobalStepBaseDir": "cypress/support/steps",
+    "cucumberJson": {
+      "generate": "true",
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "scripts": {
+    "cypress": "npx cypress run",
+    "cy:open": "npx cypress open",
+    "test:chrome": "npx cypress run --browser chrome",
+    "test:firefox": "npx cypress run --browser firefox"
+  },
+  "keywords": [],
+  "description": "Para que você possa executar esse projeto a partir de sua maquina recomendamos fortemente seguir os passos abaixo.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ElislainySilvaLopes/Cubos-PSEL.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": ""
+}
