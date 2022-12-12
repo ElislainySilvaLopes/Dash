@@ -1,0 +1,212 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Login site PSEL QA",
+    "line": 1,
+    "id": "login-site-psel-qa",
+    "tags": [],
+    "uri": "login.feature",
+    "elements": [
+      {
+        "id": "login-site-psel-qa;fazer-login-sem-sucesso(preencher-incorretamente-os-campos-email-e-senha)",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "fazer login sem sucesso(preencher incorretamente os campos email e senha)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que estou na página de login",
+            "result": {
+              "status": "passed",
+              "duration": 3032000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "preencho incorretamente os campos E-mail e Senha",
+            "result": {
+              "status": "passed",
+              "duration": 993000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "clico no botão \"ENTRAR\"",
+            "result": {
+              "status": "passed",
+              "duration": 70000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "vejo a mensagem de erro de email ou senha inválidos",
+            "result": {
+              "status": "passed",
+              "duration": 543000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-site-psel-qa;fazer-login-sem-preencher-o-campo-de-e-mail",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "fazer login sem preencher o campo de E-mail",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que estou na página de login",
+            "result": {
+              "status": "passed",
+              "duration": 2310000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "eu nao preencho o campo de email e preencho o campo de senha corretamente",
+            "result": {
+              "status": "passed",
+              "duration": 379000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "clico no botão \"ENTRAR\"",
+            "result": {
+              "status": "passed",
+              "duration": 76000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "vejo a mensagem de erro pra informar email",
+            "result": {
+              "status": "passed",
+              "duration": 50000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-site-psel-qa;fazer-login-sem-preencher-o-campo-de-senha",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "fazer login sem preencher o campo de Senha",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que estou na página de login",
+            "result": {
+              "status": "passed",
+              "duration": 2609000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "eu preencho o campo de E-mail corretamente e não preencho o campo de senha",
+            "result": {
+              "status": "passed",
+              "duration": 411000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "clico no botão \"ENTRAR\"",
+            "result": {
+              "status": "passed",
+              "duration": 80000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "vejo a mensagem de erro pra informar a senha",
+            "result": {
+              "status": "passed",
+              "duration": 30000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-site-psel-qa;preencher-o-campo-de-e-mail-com-e-mail-inválido",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "preencher o campo de E-mail com e-mail inválido",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que estou na página de login",
+            "result": {
+              "status": "passed",
+              "duration": 1932000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "eu preencho o campo de E-mail com e-mail inválido",
+            "result": {
+              "status": "passed",
+              "duration": 686000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "clico no botão \"ENTRAR\"",
+            "result": {
+              "status": "passed",
+              "duration": 83000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "vejo a mensagem de erro para informar um email válido",
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

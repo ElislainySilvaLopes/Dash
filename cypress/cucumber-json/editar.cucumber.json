@@ -1,0 +1,72 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Editar Cúbico",
+    "line": 1,
+    "id": "editar-cúbico",
+    "tags": [],
+    "uri": "editar.feature",
+    "elements": [
+      {
+        "id": "editar-cúbico;editar-cúbico-com-sucesso",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Editar cúbico com sucesso",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que realizo login com sucesso",
+            "result": {
+              "status": "passed",
+              "duration": 4887000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "eu clico no botão Editar",
+            "result": {
+              "status": "passed",
+              "duration": 500000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "edito um dos campos Nome, Email, CPF, Telefone, Stack e Conhecimento",
+            "result": {
+              "status": "passed",
+              "duration": 3337000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "clico no botão “Salvar”",
+            "result": {
+              "status": "passed",
+              "duration": 107000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "vejo a mensagem de usuário salvo com sucesso",
+            "result": {
+              "status": "passed",
+              "duration": 370000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

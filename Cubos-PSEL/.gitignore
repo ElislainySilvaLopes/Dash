@@ -1,6 +1,0 @@
-node_modules
-cypress/videos
-cypress/screenshots
-cypress/cucumber-json
-public
-debug.log

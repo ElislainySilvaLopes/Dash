@@ -1,0 +1,302 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Cadastro de usuário",
+    "line": 1,
+    "id": "cadastro-de-usuário",
+    "tags": [],
+    "uri": "cadastro.feature",
+    "elements": [
+      {
+        "id": "cadastro-de-usuário;adicionar-um-usuário-sem-sucesso(email-já-existe)",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "adicionar um usuário sem sucesso(Email já existe)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que realizo login com sucesso",
+            "result": {
+              "status": "passed",
+              "duration": 5320000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "eu clico no botão “Adicionar”",
+            "result": {
+              "status": "passed",
+              "duration": 432000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "preencho corretamente os campos Nome, CPF, Telefone e Stack",
+            "result": {
+              "status": "passed",
+              "duration": 1592000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "preencho o campo E-mail com um e-mail já existente",
+            "result": {
+              "status": "passed",
+              "duration": 786000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "seleciono os Conhecimentos",
+            "result": {
+              "status": "passed",
+              "duration": 173000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "clico no botão “Salvar”",
+            "result": {
+              "status": "passed",
+              "duration": 104000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "vejo a mensagem de erro que o usuário já existe",
+            "result": {
+              "status": "passed",
+              "duration": 628000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "cadastro-de-usuário;adicionar-um-usuário-sem-sucesso(cpf-já-em-uso)",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "adicionar um usuário sem sucesso(CPF já em uso)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que realizo login com sucesso",
+            "result": {
+              "status": "passed",
+              "duration": 5035000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "eu clico no botão “Adicionar”",
+            "result": {
+              "status": "passed",
+              "duration": 413000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "preencho corretamente os campos Nome, E-mail, Telefone e Stack",
+            "result": {
+              "status": "passed",
+              "duration": 1716000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "preencho o campo CPF com um CPF já existente",
+            "result": {
+              "status": "passed",
+              "duration": 689000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "seleciono os Conhecimentos",
+            "result": {
+              "status": "passed",
+              "duration": 179000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "clico no botão “Salvar”",
+            "result": {
+              "status": "passed",
+              "duration": 106000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "vejo a mensagem de erro que o CPF já está em uso",
+            "result": {
+              "status": "passed",
+              "duration": 658000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "cadastro-de-usuário;adicionar-um-usuário-sem-sucesso(não-preencher-um-dos-campos-obrigatórios)",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "adicionar um usuário sem sucesso(Não preencher um dos campos obrigatórios)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que realizo login com sucesso",
+            "result": {
+              "status": "passed",
+              "duration": 5217000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "eu clico no botão “Adicionar”",
+            "result": {
+              "status": "passed",
+              "duration": 374000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "não preencho um dos campos Nome, E-mail, CPF, Telefone, Stack e conhecimento",
+            "result": {
+              "status": "passed",
+              "duration": 2300000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "clico no botão “Salvar”",
+            "result": {
+              "status": "passed",
+              "duration": 242000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "eu vejo a mensagem de erro \"<ERRO>\"",
+            "result": {
+              "status": "passed",
+              "duration": 108000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "cadastro-de-usuário;adicionar-um-usuário-sem-sucesso(preencher-os-campos-incorretamente)",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "adicionar um usuário sem sucesso(Preencher os campos incorretamente)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que realizo login com sucesso",
+            "result": {
+              "status": "passed",
+              "duration": 5203000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "eu clico no botão “Adicionar”",
+            "result": {
+              "status": "passed",
+              "duration": 445000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "preencho incorretamente um dos campos Nome, E-mail, CPF e Telefone",
+            "result": {
+              "status": "passed",
+              "duration": 1803000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "seleciono a stack e os Conhecimentos",
+            "result": {
+              "status": "passed",
+              "duration": 750000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "clico no botão “Salvar”",
+            "result": {
+              "status": "passed",
+              "duration": 113000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "eu vejo a mensagem informando <ERRO>",
+            "result": {
+              "status": "passed",
+              "duration": 199000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

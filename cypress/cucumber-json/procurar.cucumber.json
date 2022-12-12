@@ -1,0 +1,92 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Procurar Cúbico",
+    "line": 1,
+    "id": "procurar-cúbico",
+    "tags": [],
+    "uri": "procurar.feature",
+    "elements": [
+      {
+        "id": "procurar-cúbico;procurar-cúbico-com-sucesso",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Procurar cúbico com sucesso",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que realizo login com sucesso",
+            "result": {
+              "status": "passed",
+              "duration": 5815000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "faço uma busca por Usuário, Email, CPF, Telefone, Stack, Conhecimento e data de criação",
+            "result": {
+              "status": "passed",
+              "duration": 962000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "retorna um usuário de acordo com a busca feita",
+            "result": {
+              "status": "passed",
+              "duration": 36000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "procurar-cúbico;procurar-cúbico-sem-sucesso",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Procurar cúbico sem sucesso",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que realizo login com sucesso",
+            "result": {
+              "status": "passed",
+              "duration": 4282000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "faço uma busca por Usuário, Email, CPF, Telefone, Stack, Conhecimento e data de criação que não existe",
+            "result": {
+              "status": "passed",
+              "duration": 803000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "a tabela não retorna nenhum usuário",
+            "result": {
+              "status": "passed",
+              "duration": 30000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

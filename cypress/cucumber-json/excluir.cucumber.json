@@ -1,0 +1,72 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Deletar Cúbico",
+    "line": 1,
+    "id": "deletar-cúbico",
+    "tags": [],
+    "uri": "excluir.feature",
+    "elements": [
+      {
+        "id": "deletar-cúbico;cancelar-deleção-de-cúbico",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Cancelar deleção de cúbico",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que realizo login com sucesso",
+            "result": {
+              "status": "passed",
+              "duration": 5281000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "eu clico no botão “Excluir”",
+            "result": {
+              "status": "passed",
+              "duration": 828000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "abre um modal de exclusão",
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "clico no botão “Cancelar”",
+            "result": {
+              "status": "passed",
+              "duration": 122000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "o modal é fechado",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
